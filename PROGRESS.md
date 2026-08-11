@@ -9,7 +9,7 @@ Journal de construction. Reprenable : chaque phase est idempotente, on peut la r
 | Supabase | ✅ | projet `klaxon` · ref `lcayavdsjxdeyeuyghjb` · **Paris (eu-west-3)** |
 | GitHub | ✅ | dépôt `nelson980544/klaxon` — ⚠️ **encore public**, à passer en privé |
 | Expo / EAS | ✅ | compte `grandao241` |
-| Vercel | ⬜ | nécessaire pour la landing et le back-office web |
+| Vercel | ✅ | projet `klaxon` · site en ligne sur https://klaxon-five.vercel.app |
 | Apple Developer | ⬜ | nécessaire pour publier (99 $/an) |
 
 ## Phases
@@ -26,7 +26,8 @@ Journal de construction. Reprenable : chaque phase est idempotente, on peut la r
 - [ ] **Test sur iPhone réel** (Expo Go) — à faire avec le client
 - [x] **Icône, écran de démarrage, favicon** — `brand/icon.svg` → `tools/generer-icone.mjs`
 - [x] **Landing + pages légales** — `site/` (Next.js) : accueil, confidentialité, conditions, support
-- [ ] **Mise en ligne du site** — bloqué : il manque le jeton Vercel
+- [x] **Mise en ligne du site** — https://klaxon-five.vercel.app (Vercel, déploiement automatique depuis GitHub)
+- [x] **Code sur GitHub** — https://github.com/nelson980544/klaxon (public)
 - [ ] **Back-office web** (Next.js + Vercel)
 - [ ] **Audit final (GATE 2a)**
 
