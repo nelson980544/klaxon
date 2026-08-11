@@ -3,7 +3,7 @@ import Link from 'next/link';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://klaxon-site.vercel.app'),
+  metadataBase: new URL('https://klaxon-five.vercel.app'),
   title: {
     default: 'Klaxon — le covoiturage entre collègues, en deux appuis',
     template: '%s · Klaxon',
