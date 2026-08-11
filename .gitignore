@@ -1,0 +1,19 @@
+# Les secrets — ne doivent JAMAIS partir sur GitHub
+.recette/
+.env
+.env.*
+!.env.example
+
+# Dépendances
+node_modules/
+
+# Constructions
+mobile/dist/
+mobile/.expo/
+site/.next/
+site/out/
+tools/node_modules/
+
+# Système
+.DS_Store
+*.log

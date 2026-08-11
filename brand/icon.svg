@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Klaxon — deux trajets qui n'en font plus qu'un.
+       Le fond ambre est la couleur d'action de l'app : c'est elle qu'on cherche
+       du regard à 7 h du matin. Le signe reste lisible à 40 pixels, sans texte,
+       sans dégradé, sans ombre — une icône d'outil professionnel. -->
+  <rect width="1024" height="1024" fill="#F0A202"/>
+  <g fill="none" stroke="#141B22" stroke-width="104" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 232 316 L 470 512"/>
+    <path d="M 232 708 L 470 512"/>
+    <path d="M 470 512 L 792 512"/>
+  </g>
+</svg>
