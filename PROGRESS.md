@@ -51,12 +51,14 @@ Journal de construction. Reprenable : chaque phase est idempotente, on peut la r
 ## ⚠️ À régler avant d'ouvrir à de vrais salariés
 
 **L'envoi des emails de connexion.** Supabase envoie les emails lui-même sur le plan gratuit, mais :
-- impossible d'y mettre notre code à 6 chiffres (personnalisation réservée aux plans payants) ;
-- le débit est plafonné à quelques emails par heure — inutilisable dès la première entreprise cliente.
+**Resend est branché** (SMTP Supabase, codes à 6 chiffres, gabarit français, 100 emails/heure) et trois
+emails sont réellement arrivés. Mais faute de domaine vérifié, on expédie depuis l adresse partagée
+`onboarding@resend.dev`, qui ne peut écrire qu au propriétaire du compte Resend — et qui s est tue
+après quelques envois rapprochés (plafond horaire probable, non confirmé).
 
-Il faut donc brancher un service d'envoi d'emails (Resend, Postmark, Brevo…). C'est gratuit jusqu'à
-quelques milliers d'emails par mois, et c'est ce qui rendra la connexion par code réellement
-opérationnelle. **Tant que ce n'est pas fait, seuls les comptes de démonstration peuvent se connecter.**
+**Il faut donc un nom de domaine** pour ouvrir à de vrais salariés. Une fois vérifié chez Resend,
+l envoi devient illimité et l adresse d expédition cohérente. **En attendant, seuls les comptes de
+démonstration peuvent se connecter** — ce qui suffit pour la review Apple.
 
 ## Comptes de démonstration (pour Apple)
 
