@@ -12,6 +12,8 @@ Journal de construction. Reprenable : chaque phase est idempotente, on peut la r
 | Vercel | ✅ | projet `klaxon` · site en ligne sur https://klaxon-five.vercel.app |
 | Apple Developer | ⬜ | nécessaire pour publier (99 $/an) |
 
+Mot de passe du back-office : `BACKOFFICE_ADMIN_PASSWORD` dans `.recette/secrets.env`.
+
 ## Phases
 
 - [x] **Spec verrouillée** — `APP-SPEC.md`
@@ -28,7 +30,7 @@ Journal de construction. Reprenable : chaque phase est idempotente, on peut la r
 - [x] **Landing + pages légales** — `site/` (Next.js) : accueil, confidentialité, conditions, support
 - [x] **Mise en ligne du site** — https://klaxon-five.vercel.app (Vercel, déploiement automatique depuis GitHub)
 - [x] **Code sur GitHub** — https://github.com/nelson980544/klaxon (public)
-- [ ] **Back-office web** (Next.js + Vercel)
+- [x] **Back-office web** — https://klaxon-yte1-gray.vercel.app (projet Vercel `klaxon-yte1`, dossier `backoffice/`)
 - [ ] **Audit final (GATE 2a)**
 
 ## Décisions et corrections notables
@@ -47,6 +49,12 @@ Journal de construction. Reprenable : chaque phase est idempotente, on peut la r
    chiffres agrégés, jamais un trajet nominatif, même dans sa propre entreprise.
 6. **Bouton d'attestations** — il ne faisait rien ; il dépose maintenant une demande tracée que le
    back-office traitera — `db/0006_attestations.sql`.
+
+## ⚠️ Dettes assumées
+
+**Le back-office n'a pas de second facteur** — un simple mot de passe, alors qu'il ouvre les données
+nominatives de toutes les entreprises clientes. Le mot de passe généré est long et unique, mais un
+second facteur (TOTP) est à ajouter avant le premier vrai client.
 
 ## ⚠️ À régler avant d'ouvrir à de vrais salariés
 
