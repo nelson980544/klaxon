@@ -19,11 +19,11 @@ Journal de construction. Reprenable : chaque phase est idempotente, on peut la r
 - [x] **Référentiel communes** — 35 014 entrées (France entière + 45 arrondissements), via `scripts/import-communes.mjs`
 - [x] **Isolation multi-tenant prouvée** — `scripts/test-isolation.mjs` : 14 tentatives, 14 bloquées
 - [x] **Parcours métier prouvé** — `scripts/test-metier.mjs` : 18 étapes
-- [x] **App Expo** — SDK 57, Expo Router, `mobile/src/`
+- [x] **App Expo** — **SDK 54** (figé : version supportée par l Expo Go du client), Expo Router, `mobile/src/`
 - [x] **Écrans** — connexion, code, profil, trajets, publication, confirmation, compteur, RH, réglages
 - [x] **Données de démonstration** — `scripts/seed-demo.mjs` : 2 entreprises, 13 salariés, 3 mois d'historique
 - [x] **Vérifications** — `tsc --noEmit` ✅ · `expo export --platform ios` ✅ · bundle de dev servi en HTTP 200 ✅
-- [ ] **Test sur iPhone réel** (Expo Go) — à faire avec le client
+- [x] **Testé sur appareil réel** (iPad, Expo Go, 12 août 2026) — l app se lance et fonctionne
 - [x] **Icône, écran de démarrage, favicon** — `brand/icon.svg` → `tools/generer-icone.mjs`
 - [x] **Landing + pages légales** — `site/` (Next.js) : accueil, confidentialité, conditions, support
 - [x] **Mise en ligne du site** — https://klaxon-five.vercel.app (Vercel, déploiement automatique depuis GitHub)
